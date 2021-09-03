@@ -1,0 +1,13 @@
+<div class="container">
+  <h3>Details</h3>
+  <p>
+    Name : {{entry.details.name}}<br><br>
+    Email : {{entry.details.email}}<br><br>
+    Password : {{entry.details.password}}<br><br>
+    Mobile Number : {{entry.details.mob}}<br><br>
+    City : {{entry.details.city}}
+  </p>
+  <ng-container *ngFor="let member of entry.details.familyMembers">
+    <p>Family Member: {{member.name}},  Relation :  {{member.relation}} </p>
+  </ng-container>
+</div>
